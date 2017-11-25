@@ -1,0 +1,6 @@
+include Makefile
+
+CPPFLAGS += -include @abs_top_srcdir@/config.h -I @abs_top_srcdir@/lib -D_GNU_SOURCE=
+CFLAGS += -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast
+$(BIN): @abs_top_srcdir@/lib/libgnu.a
+

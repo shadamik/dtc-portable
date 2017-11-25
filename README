@@ -1,0 +1,2 @@
+gnulib-tool --update && autoreconf -vfi && ./configure && make -j
+ 

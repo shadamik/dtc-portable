@@ -89,3 +89,5 @@
 /xalloc-oversized.h
 /xsize.c
 /xsize.h
+/printf.c
+/vfprintf.c

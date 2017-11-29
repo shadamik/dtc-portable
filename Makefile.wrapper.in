@@ -1,7 +1,15 @@
 include Makefile
+
 PREFIX = @prefix@
-CPPFLAGS += -include @abs_top_srcdir@/config.h -I @abs_top_srcdir@/lib -D_GNU_SOURCE=
-CFLAGS += -Wno-int-to-pointer-cast -Wno-pointer-to-int-cast
+
+CPPFLAGS += -include @abs_top_srcdir@/config.h \
+            -I @abs_top_srcdir@/lib \
+						-D_GNU_SOURCE= \
+						-D__printf__=gnu_printf
+
+CFLAGS += -Wno-int-to-pointer-cast \
+          -Wno-pointer-to-int-cast
+
 SHAREDLIB_EXT = dll
 SHAREDLIB_LINK_OPTIONS = -shared
 LIBFDT_lib = $(LIBFDT_objdir)/libfdt.$(SHAREDLIB_EXT)

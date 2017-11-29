@@ -77,3 +77,6 @@
 /wctype_h.m4
 /wint_t.m4
 /xsize.m4
+/asm-underscore.m4
+/printf-posix-rpl.m4
+/vfprintf-posix.m4
